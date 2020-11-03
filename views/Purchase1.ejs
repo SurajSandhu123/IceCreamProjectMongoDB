@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IceCreame</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/style2.css">
+    </head>
+    <body>
+        <header class="header">
+                <nav class="navbar navbar-inverse nav ">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                          <a class="navbar-brand" href="#">WebSiteName</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                          <li ><a href="/">Home</a></li>
+                          <li ><a href="/Contact/">Contact Us</a></li>
+                          <li class="active"><a href="#">Purchase</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><button type="button" class="btn btn-info btn-lg Button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-envelope"></span>  <%= person.email %>
+                            </a></li>
+                          </ul>
+                        <form class="navbar-form navbar-left">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search" name="search">
+                          </div>
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                      </div>
+                </nav> 
+                <div class="modal fade" id="myModal1" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content try">
+                        <div class="modal-body">
+                          <div class="frame">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                            <div class="sign">
+                                <h1>Sign Up</h1>
+                                <div class="icon">
+                                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i><br><br></a>
+                                </div>
+                                <p class="text-muted text-center">or use your account</p>
+                                <form class="form-group">
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        <label for="email">Password:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter password" name="email">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                                      </div>
+                                    <p class="text-center">Forget Your Password</p>
+                                    <button class="btn btn-primary SignUp">Sign Up</button>
+                                </form>
+                            </div>
+                            <div class="bg-primary text">
+                                <h1 class="text-center">
+                                    Welcome, Friend!
+                                </h1>
+                                <h4 class="text-center">Enter your details and start journey with<br> us.</h4>
+                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" class="close" data-dismiss="modal">Sign In</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>      
+
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content try">
+                      <div class="modal-body">
+                          <div class="frame">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                          
+                              <div class="sign" >
+                                  <h1>Sign In</h1>
+                                  <div class="Icon1">
+                                      <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                                      <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                                      <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                                      <a href="#"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i><br><br></a>
+                                  </div>
+                                  <p class="text-muted text-center">or use your account</p>
+                                  <form class="form-group form2">
+                                      <div class="form-group">
+                                          <label for="email">Email:</label>
+                                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="pwd">Password:</label>
+                                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                                        </div>
+                                      <p class="text-center">Forget Your Password</p>
+                                      <button class="btn btn-primary">Sign Up</button>
+                                  </form>
+                              </div>
+                              <div class="bg-primary text">
+                                  <h1 class="text-center">
+                                      Hello, Friend!
+                                  </h1>
+                                  <h4 class="text-center">Enter your details and start journey with<br> us.</h4>
+                                  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1" class="close" data-dismiss="modal">Sign Up</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="headline">
+                    <h3>The proof of great ice cream is in the <br>taste and our ice creams are only <br>crafted from the very best fruit,<br> berries, nuts and chocolate.
+                    </h3>
+                </div>  
+        </header>
+
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content try">
+                <div class="modal-body">
+                    <div class="frame">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                    
+                        <div class="sign" >
+                            <h1>Sign In</h1>
+                            <form class="form-group form2">
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                                  </div>
+                                <p class="text-center">Forget Your Password</p>
+                                <button class="btn btn-primary">Sign Up</button>
+                            </form>
+                        </div>
+                        <div class="bg-primary text">
+                            <h1 class="text-center">
+                                Hello, Friend!
+                            </h1>
+                            <h4 class="text-center">Enter your details and start journey with<br> us.</h4>
+                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1" class="close" data-dismiss="modal">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        <section class="container">
+            <div class="divimg"><img src="/assets/pisacchio.png"></div>
+            <div class="containertext">
+                <h1>Enjoy our flavoursome range
+                    of gorgeous ice cream</h1>
+                    <p>Made right on the family farm in North Wales, using our own organic milk as the main ingredient, Woodland’s of Erbistock Ice Cream is all about great flavour. Actually we’re obsessed with creating the perfect flavour, often working through the night at our kitchen table to combine all the fresh ingredients until we’re 100% happy with the results.
+
+                        From the best Californian raisins to home-toasted crunchy pecans. From fresh, whole strawberries to pure Belgian cocoa – they’re just some of the ingredients that make Woodlands of Erbistock stand out from the rest.</p>
+            </div>
+            <div class="third"><img src="/assets/strawberrypetal.png"></div>
+        </section>
+        <section class="container1">
+            <div class="flavour">
+                <h1>ALL-NATURAL VEGAN ICE CREAM & DESSERTS</h1>
+                <div class="main">
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <h3>Ice Cream Flavours</h3>
+                    <div class="ice">
+                        <div >
+                            <img src="/assets/360x.webp"> 
+                            <h4>Salted chocolate chip</h4>        
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book <i class="fa fa-share" aria-hidden="true"></i></button>
+                          
+                        </div>
+                        <script>
+                            function Changetext() {
+                                document.getElementsByClassName('Book').innerText="Booked";
+                                alert("Book Successfully");
+                            }
+                        </script>
+                        <div >
+                            <img src="/assets/Almond.webp"> 
+                            <h4>Almond Brittle Fudge</h4>
+                            <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                        </div>
+                        <div >
+                            <img src="/assets/pandan.webp"> 
+                            <h4>Pandon Gula Melaka</h4>
+                            <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                        </div>
+                        <div >
+                            <img src="/assets/black.webp"> 
+                            <h4>Black Forest</h4>
+                            <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            <div class="main">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                <h3>Plant based Nut Mylks. Freshly pressed every Friday</h3>
+                <div class="ice">
+                    <div >
+                        <img src="/assets/choc.webp"> 
+                        <h4>Chocolate Almond Mylk (PRE-ORDER)</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/vanilla.webp"> 
+                        <h4>Vanilla Cashew Mylk (PRE-ORDER)</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/rose.webp"> 
+                        <h4>Pistachio Rose Mylk (PRE-ORDER)</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/turmeri.webp"> 
+                        <h4>Turmeric Almond Mulk (PRE-ORDER)</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                <h3>Cakes</h3>
+                <div class="ice">
+                    <div >
+                        <img src="/assets/baked.webp"> 
+                        <h4>Baked Chocolate Donut</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/Cake.webp"> 
+                        <h4>Chunky Peanut Cheesecake</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/citrus.webp"> 
+                        <h4>Citrus Chocolate Cupcake</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/darkCake.webp"> 
+                        <h4>Dark Chocolate Ganache Cake</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                <h3>Superfood Bliss Balls</h3>
+                <div class="ice">
+                    <div >
+                        <img src="/assets/Chocolate.webp"> 
+                        <h4>Chocolate Hazelnut Superfood Bliss Ball</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/BallChocolate.webp"> 
+                        <h4>Chocolate Pistachio Superfood Bliss Ball</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/BallCranberry_Fig.webp"> 
+                        <h4>Cranberry, Fig, Chia Seed Superfood Bliss Ball</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/Keto.webp"> 
+                        <h4>Keto Macadamia Protein Ball (PRE-ORDER)</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                <h3>Kind Bundles</h3>
+                <div class="ice">
+                    <div >
+                        <img src="/assets/kind.webp"> 
+                        <h4>Kind Kones Favorites (6 cups or 6 pints)</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/browine.webp"> 
+                        <h4>Chunky Peanut Cheesecake (5 Cups or 4 pints)</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/ice.webp"> 
+                        <h4>Brownie Sundae Kit (4 Cups or 3 pints)</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                    <div >
+                        <img src="/assets/oh.webp"> 
+                        <h4>Oh Just Surprise Me  (5 Cups or 4 pints)</h4>
+                        <button class="btn btn-warning" onclick="Changetext()" class="Book">Book  <i class="fa fa-share" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/LqK-BSdrTTA?rel=0&amp;showinfo=0&amp;vq=720" width="100%" height="480" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+            </div>
+         </div>
+        </section>
+        <section>
+    <p class="out">WE WOULD LOVE TO HEAR FROM YOU:</p>
+    <div class="icon">
+        <i class="fa fa-facebook-square fa-3x" aria-hidden="true" onclick="hello()"></i>
+        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-telegram fa-3x" aria-hidden="true"></i><br><br>
+        <img src="/assets/logo.svg">
+    </div>
+</section>
+<footer class=" center-block text-muted">
+    <p><span style="margin-right: 30px;">405-335-6697</span><span style="margin-right: 30px;">141458 Sangra Road,Stillwater,78915</span><strong style="margin-right: 20px; color: orange;">Email Us</strong><span>@2015 BillygoatIceCremCo</span></p>
+</footer>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/style2.css">
+</head>
+<body>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Open Large Modal</button>
+
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content try">
+       
+        <div class="modal-body">
+          <div class="frame">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+      
+            <div class="sign">
+                <h1>Sign Up</h1>
+                <div class="icon">
+                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i><br><br></a>
+                </div>
+                <p class="text-muted text-center">or use your account</p>
+                <form class="form-group">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <label for="email">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password" name="email">
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                      </div>
+                    <p class="text-center">Forget Your Password</p>
+                    <button class="btn btn-primary SignUp">Sign Up</button>
+                </form>
+            </div>
+            <div class="bg-primary text">
+                <h1 class="text-center">
+                    Welcome, Friend!
+                </h1>
+                <h4 class="text-center">Enter your details and start journey with<br> us.</h4>
+                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" class="close" data-dismiss="modal">Sign In</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content try">
+     
+      <div class="modal-body">
+          <div class="frame">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+          
+              <div class="sign">
+                  <h1>Sign In</h1>
+                  <div class="Icon1">
+                      <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i><br><br></a>
+                  </div>
+                  <p class="text-muted text-center">or use your account</p>
+                  <form class="form-group form2">
+                      <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                        </div>
+                      <p class="text-center">Forget Your Password</p>
+                      <button class="btn btn-primary">Sign Up</button>
+                  </form>
+              </div>
+              <div class="bg-primary text">
+                  <h1 class="text-center">
+                      Hello, Friend!
+                  </h1>
+                  <h4 class="text-center">Enter your details and start journey with<br> us.</h4>
+                  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1" class="close" data-dismiss="modal">Sign Up</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
+

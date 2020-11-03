@@ -1,0 +1,56 @@
+.frame {
+  
+    height: 500px;
+    display: flex;
+    border: 2px solid black;
+    box-shadow: 5px 10px 18px 10px #888888;
+}
+.frame .sign {
+    width: 50%;  
+    border: 2px solid green;
+}
+.sign h1 {
+    text-align: center;
+    font-weight: bolder;
+    color:black;
+    font-style: oblique;
+}
+.frame .text {
+    width: 50%;
+}
+.icon {
+    padding-left: 40%;
+}
+.sign form {
+    margin: 10%;
+    margin-top: 2%; 
+}
+form input{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    border: 50%;
+}
+form button {
+    width: 40%;
+    text-align: center;
+    height: 40px;
+    margin-left: 30%;
+    
+}
+.text h1 {
+    margin-top: 20%;
+}
+.text button {
+    border-color: white;
+    margin-top: 10%;
+    margin-left: 36%;
+}
+.modal-body {
+    padding: 0px;
+   
+}
+.try{
+    margin: 5%;
+    margin-top:100px;
+}
